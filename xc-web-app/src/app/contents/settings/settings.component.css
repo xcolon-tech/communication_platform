@@ -1,0 +1,54 @@
+.settings-container {
+    background-color: #f07c72;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab.selected {
+    border-bottom: 2px solid black;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  select, input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+  }
+  
+  .btn {
+    background-color: #f07c72;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #d65b57;
+  }

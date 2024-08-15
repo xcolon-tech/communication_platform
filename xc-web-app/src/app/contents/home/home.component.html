@@ -1,0 +1,19 @@
+<div class="chat-container">
+    <div class="header">
+      <span class="tab selected">Chats</span>
+      <span class="tab">Profile</span>
+      <span class="tab">Settings</span>
+    </div>
+    <div class="chat-list">
+      <div *ngFor="let chat of chatlist" class="chat-item">
+        <div class="avatar">
+          <img [src]="chat.avatar" alt="Avatar">
+          <div *ngIf="chat.isNewMessage" class="notification"></div>
+        </div>
+        <div class="chat-info">
+          <div class="contact-name">{{ chat.contactName }}</div>
+          <div class="last-message">{{ chat.message }}</div>
+        </div>
+      </div>
+    </div>
+  </div>

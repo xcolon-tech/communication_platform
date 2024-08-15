@@ -1,0 +1,65 @@
+<div class="settings-container">
+    <div class="tabs">
+      <div class="tab">Chats</div>
+      <div class="tab">Profile</div>
+      <div class="tab selected">Settings</div>
+    </div>
+  
+    <form [formGroup]="settingsForm" (ngSubmit)="onSaveSettings()">
+      <div class="form-group">
+        <label>Default Language</label>
+        <select formControlName="defaultLanguage">
+          <option value="EN">EN</option>
+          <option value="FR">FR</option>
+          <option value="ES">ES</option>
+          <!-- Add more languages as needed -->
+        </select>
+      </div>
+  
+      <h3>AI Services</h3>
+      <div formGroupName="aiServices">
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="intelligentConversations"> Intelligent Conversations
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="adaptiveRecommendations"> Adaptive Recommendations
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="securityEnhancement"> Security Enhancement
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="smartAssistance"> Smart Assistance
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="sentimentAnalysis"> Sentiment Analysis
+          </label>
+        </div>
+      </div>
+  
+      <h3>Others</h3>
+      <div formGroupName="others">
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="multiLingualSupport"> Multi-Lingual Support
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" formControlName="securityCompliance"> Security & Compliance
+          </label>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn">Save Settings</button>
+      <button (click)="onLogout()">Logout</button>
+    </form>
+  </div>

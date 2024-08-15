@@ -1,0 +1,8 @@
+<div class="login-container">
+    <h1>AI FEATURED COMMUNICATION PLATFORM</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="mobile" placeholder="Mobile">
+      <input type="password" formControlName="mpin" placeholder="MPIN">
+      <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+    </form>
+  </div>

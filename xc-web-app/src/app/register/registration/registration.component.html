@@ -1,0 +1,17 @@
+<div class="register-container">
+    <div class="icon">
+      <!-- <img src="path-to-your-icon" alt="User Icon"> -->
+    </div>
+    <form (ngSubmit)="register()">
+      <div class="form-group">
+        <input type="text" placeholder="Name" (ngModel)="user.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Mobile" (ngModel)="user.mobile" name="mobile" required>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="MPIN" (ngModel)="user.mpin" name="mpin" required>
+      </div>
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </div>

@@ -1,0 +1,74 @@
+.profile-container {
+    background-color: #f07c72;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab.selected {
+    border-bottom: 2px solid black;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #f07c72;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #d65b57;
+  }
+  
+  .about-section {
+    margin-top: 20px;
+  }

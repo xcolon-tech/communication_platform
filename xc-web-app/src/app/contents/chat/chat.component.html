@@ -1,0 +1,29 @@
+<div class="chat-header">
+    <div class="contact-info">
+      <img src="assets/avatar.png" alt="Avatar" class="avatar">
+      <div>
+        <div class="contact-name">Contact 1</div>
+        <div class="status">Online</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="chat-body">
+    <div *ngFor="let message of messages">
+      <div [ngClass]="{'message-sent': message.isSentByUser, 'message-received': !message.isSentByUser}">
+        {{ message.message }}
+      </div>
+    </div>
+    <div class="typing">Typing.....</div>
+  </div>
+  
+  <form [formGroup]="chatForm" (ngSubmit)="onSendMessage()" class="chat-footer">
+    <input formControlName="message" type="text" placeholder="Type a message" class="message-input">
+    <button type="submit" class="send-button">Send</button>
+    <div class="icons">
+      <i class="icon-robot"></i>
+      <i class="icon-upload"></i>
+      <i class="icon-image"></i>
+      <i class="icon-microphone"></i>
+    </div>
+  </form>
